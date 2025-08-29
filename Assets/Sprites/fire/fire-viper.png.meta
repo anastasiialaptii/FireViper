@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1602001e38f9f1d439dcefe83830d687
+guid: 04f85e7648546b84a903d5b98f938216
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2562648702745080954
-    second: d400dbb1f343b1f6dd1138e70a722543_t_0
+      213: 8959149279736429517
+    second: fire-viper_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,8 +46,8 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
-  spriteExtrude: 0
+  spriteMode: 2
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: d400dbb1f343b1f6dd1138e70a722543_t_0
+      name: fire-viper_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 453
-        height: 340
+        x: 27
+        y: 51
+        width: 369
+        height: 209
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a747c3bea6b509320800000000000000
-      internalID: 2562648702745080954
+      spriteID: dcbf2646dca455c70800000000000000
+      internalID: 8959149279736429517
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      d400dbb1f343b1f6dd1138e70a722543_t_0: 2562648702745080954
+      fire-viper_0: 8959149279736429517
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

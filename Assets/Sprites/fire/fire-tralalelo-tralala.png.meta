@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4924edcb87a03f14cb6a54b7ee5f93ec
+guid: 090a1e8c15ddf3043b1a804972fe5a86
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4992917068342630522
-    second: 09ddea95febe64084c6ddc1c5be18cca_0
+      213: 3194650004776966417
+    second: fire-tralalelo-tralala_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 09ddea95febe64084c6ddc1c5be18cca_0
+      name: fire-tralalelo-tralala_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 626
-        height: 357
+        x: 6
+        y: 7
+        width: 616
+        height: 344
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a781c8bbe976a4540800000000000000
-      internalID: 4992917068342630522
+      spriteID: 1195e6cd04da55c20800000000000000
+      internalID: 3194650004776966417
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      09ddea95febe64084c6ddc1c5be18cca_0: 4992917068342630522
+      fire-tralalelo-tralala_0: 3194650004776966417
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

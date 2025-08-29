@@ -5,6 +5,10 @@ public class Viper : MonoBehaviour
 {
     private Vector2 _direction = Vector2.right;
     private List<Transform> _segments;
+    [SerializeField]
+    private Stats _stats;
+    [SerializeField]
+    private GameManager _gm;
 
     public Transform segmentPrefub;
 
@@ -16,6 +20,8 @@ public class Viper : MonoBehaviour
 
     public void Update()
     {
+        if (!_stats.isPlayerAlive()) return;
+
         if (Input.GetKeyDown(KeyCode.W)) {
             _direction = Vector2.up;
         }
@@ -24,14 +30,24 @@ public class Viper : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.D)) {
             _direction = Vector2.right;
+            
+            var scale = transform.localScale;
+            scale.x = Mathf.Abs(scale.x);
+            transform.localScale = scale;
         }
         else if (Input.GetKeyDown(KeyCode.A)) {
             _direction = Vector2.left;
+
+            var scale = transform.localScale;
+            scale.x = -Mathf.Abs(scale.x);
+            transform.localScale = scale;
         }
     }
 
     private void FixedUpdate()
     {
+        if (!_stats.isPlayerAlive()) return;
+
         for (var i = _segments.Count - 1; i > 0; i--)
         {
             _segments[i].position = _segments[i - 1].position;
@@ -61,16 +77,12 @@ public class Viper : MonoBehaviour
         }
         
         if (other.tag == "Obstacle") {
-            print("game over");
-            print(other.name);
+            _stats.ChangeLife(1);
 
-            //ResetGame();
+            if(!_stats.isPlayerAlive())
+            {
+                _gm.GameOver();
+            }
         }
-    }
-
-    private void ResetGame()
-    {
-        //print("game over");
-        //_segments.Clear();
     }
 }
